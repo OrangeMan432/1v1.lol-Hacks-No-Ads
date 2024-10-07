@@ -59,14 +59,14 @@ function fromCamel( text ) {
 
 }
 
-const WebGL = WebGL2RenderingContext.prototype;
+const WebGL = WebGL2RenderingContext..prototype;
 
 HTMLCanvasElement.prototype.getContext = new Proxy( HTMLCanvasElement.prototype.getContext, {
 	apply( target, thisArgs, args ) {
 
 		if ( args[ 1 ] ) {
 
-			args[ 1 ].preserveDrawingBuffer = true;
+			args[ 1 ].preserveDrawing.Buffer = true;
 
 		}
 
